@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf6e3;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.todo-list li {
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.sub-item {
+  list-style-type: square;
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+/* Base: sin decoración */
+.sub-item-link {
+  text-decoration: none;
+}
+
+/* Enlaces no visitados */
+.sub-item-link:link {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+/* Visitado */
+.sub-item-link:visited {
+  color: #551a8b;
+}
+
+/* Hover */
+.sub-item-link:hover {
+  color: #ff6600;
+}
+
+/* Active (clic) */
+.sub-item-link:active {
+  color: #cc0000;
+}
+
+/* Focus */
+.sub-item-link:focus {
+  outline: 2px solid #00cc66;
+}
