@@ -1,0 +1,44 @@
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Orden y crecimiento */
+.basic-plan {
+  order: 0;
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;
+}
+
+.premium-plan {
+  order: 2;
+}
+
+/* Estilo opcional para personalizar */
+.basic-plan {
+  background-color: #e0f7fa;
+}
+
+.pro-plan {
+  background-color: #c8e6c9;
+}
+
+.premium-plan {
+  background-color: #ffe0b2;
+}
