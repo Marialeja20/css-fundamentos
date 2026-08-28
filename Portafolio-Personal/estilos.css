@@ -1,0 +1,473 @@
+/* Configuración general */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f5ff;
+  color: #29233d;
+}
+
+
+/* =========================
+   BARRA DE NAVEGACIÓN
+   ========================= */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 8%;
+
+  background-color: #29233d;
+
+  z-index: 1000;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+#navbar a:hover {
+  color: #c9a7ff;
+}
+
+
+/* =========================
+   SECCIÓN DE BIENVENIDA
+   ========================= */
+
+#welcome-section {
+  height: 100vh;
+
+  min-height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 100px 20px 40px;
+
+  background: linear-gradient(
+    135deg,
+    #e9ddff,
+    #f7f5ff
+  );
+}
+
+.welcome-content {
+  max-width: 750px;
+}
+
+.small-title {
+  color: #7651c9;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 15px;
+}
+
+#welcome-section h1 {
+  font-size: 65px;
+
+  color: #29233d;
+
+  margin-bottom: 10px;
+}
+
+#welcome-section h2 {
+  font-size: 28px;
+
+  color: #7651c9;
+
+  margin-bottom: 25px;
+}
+
+#welcome-section p:not(.small-title) {
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  color: #5c566d;
+
+  margin-bottom: 35px;
+}
+
+.welcome-button {
+  display: inline-block;
+
+  padding: 15px 30px;
+
+  background-color: #7651c9;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.welcome-button:hover {
+  background-color: #5b3ca5;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   SECCIÓN DE PROYECTOS
+   ========================= */
+
+#project-section {
+  min-height: 100vh;
+
+  padding: 110px 8% 80px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.section-title {
+  color: #7651c9;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 10px;
+}
+
+#project-section h2,
+#contact h2 {
+  font-size: 42px;
+
+  margin-bottom: 15px;
+
+  color: #29233d;
+}
+
+.section-description {
+  max-width: 650px;
+
+  margin: 0 auto 50px;
+
+  color: #6b6578;
+
+  line-height: 1.6;
+}
+
+
+/* Contenedor de proyectos */
+
+.projects-container {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* Tarjeta del proyecto */
+
+.project-tile {
+  text-align: left;
+
+  background-color: #f8f6ff;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  border: 1px solid #e5def5;
+
+  transition: 0.3s;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.project-tile:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 12px 30px rgba(80, 50, 130, 0.15);
+}
+
+.project-number {
+  color: #7651c9;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+.project-tile h3 {
+  font-size: 25px;
+
+  margin-bottom: 15px;
+
+  color: #29233d;
+}
+
+.project-tile p {
+  color: #6b6578;
+
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+}
+
+
+/* Tecnologías */
+
+.technologies {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 25px;
+}
+
+.technologies span {
+  background-color: #e8ddff;
+
+  color: #5b3ca5;
+
+  padding: 6px 10px;
+
+  border-radius: 15px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+
+/* Enlace del proyecto */
+
+.project-tile a {
+  color: #7651c9;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  margin-top: auto;
+}
+
+.project-tile a:hover {
+  color: #4d318c;
+}
+
+
+/* =========================
+   CONTACTO
+   ========================= */
+
+#contact {
+  min-height: 60vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 80px 20px;
+
+  background-color: #29233d;
+
+  color: white;
+}
+
+#contact h2 {
+  color: white;
+}
+
+#contact p:not(.section-title) {
+  max-width: 600px;
+
+  line-height: 1.7;
+
+  color: #ddd7e8;
+
+  margin-bottom: 30px;
+}
+
+#contact .section-title {
+  color: #c9a7ff;
+}
+
+#profile-link {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  background-color: #7651c9;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+#profile-link:hover {
+  background-color: #9874e5;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
+
+footer {
+  padding: 25px;
+
+  text-align: center;
+
+  background-color: #1e192d;
+
+  color: #aaa4b5;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   DISEÑO PARA CELULAR
+   ========================= */
+
+@media (max-width: 800px) {
+
+  #navbar {
+    padding: 15px 5%;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  #welcome-section h1 {
+    font-size: 45px;
+  }
+
+  #welcome-section h2 {
+    font-size: 22px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  #project-section h2,
+  #contact h2 {
+    font-size: 34px;
+  }
+}
+
+
+/* =========================
+   DISEÑO PARA CELULAR PEQUEÑO
+   ========================= */
+
+@media (max-width: 450px) {
+
+  .logo {
+    font-size: 18px;
+  }
+
+  #navbar a {
+    font-size: 14px;
+  }
+
+  #welcome-section h1 {
+    font-size: 36px;
+  }
+
+  #welcome-section h2 {
+    font-size: 20px;
+  }
+
+  #welcome-section p:not(.small-title) {
+    font-size: 16px;
+  }
+
+  #project-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .project-tile {
+    padding: 25px;
+  }
+}
+
+
